@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p 
+    a(href='/new') Create new car
+  p
+    for car in carsCollection
+      p= car.name + '   '
+        a(href='/show/' + car._id) show

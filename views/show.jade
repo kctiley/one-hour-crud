@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1=title
+  p= car.name
+  p
+    a(href='/edit/' + car._id) Edit
+  p
+    a(href='/delete/' + car._id) Delete
+  

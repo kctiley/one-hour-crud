@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+    h1= title
+    form(id='form' name='form' action='/new' method='post')
+      p
+        | Enter a car name
+        input(type='text' id='carName' name='carName')
+      p
+        button(type='submit') Submit
